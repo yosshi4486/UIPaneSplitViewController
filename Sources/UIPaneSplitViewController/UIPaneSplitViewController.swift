@@ -135,7 +135,7 @@ open class UIPaneSplitViewController: UIViewController {
     /// ```
     public static var toggleInspectorKeyCommand: UIKeyCommand {
 
-        // The input and the modifierFlags keep same with UISplitViewController's toggle sidebar command.
+        // The modifierFlags keep same with UISplitViewController's toggle sidebar keycommand.
         return UIKeyCommand(title: String(localized: "Hide Inspector"), action: #selector(UIPaneSplitViewController.toggleInspector), input: "i", modifierFlags: [.command, .control])
     }
 
